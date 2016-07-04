@@ -1,3 +1,3 @@
 # FizzBuzz kata
 
-Completed `1` times
+Completed `2` times
