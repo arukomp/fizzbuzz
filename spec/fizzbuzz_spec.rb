@@ -2,11 +2,9 @@ require 'fizzbuzz'
 
 describe "fizzbuzz" do
   carousel = ['fizzbuzz', nil, nil, 'fizz', nil, 'buzz', 'fizz', nil, nil, 'fizz', 'buzz', nil, 'fizz', nil, nil]
-  carousel.each.with_index do |value, index|
-    for n in 1..100 do
-      it "fizzbuzz(#{ index + (n * 15) }) returns #{value}" do
-        expect(fizzbuzz(index + (n * 15))).to eq (value ? value : index + (n * 15))
-      end
+  (1..1000).each do |n|
+    it "should return appropriate value for a given number" do
+      expect(fizzbuzz(n)).to eq (carousel[n%15] ? carousel[n%15] : n)
     end
   end
 end
