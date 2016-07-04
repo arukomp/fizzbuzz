@@ -1,6 +1,7 @@
-def fizzbuzz(number)
-  return 'fizzbuzz' if number%3==0 && number%5==0
-  return 'fizz' if number%3==0
-  return 'buzz' if number%5==0
-  number
+class Integer
+
+  def fb
+    self%3==0 && self%5==0 ? 'fizzbuzz' : (self%3==0 ? 'fizz' : (self%5==0 ? 'buzz' : self))
+  end
+
 end
