@@ -1,4 +1,4 @@
-# 12
+# 13
 def divisible_by_3(number)
   number % 3 == 0
 end
@@ -12,8 +12,8 @@ def divisible_by_15(number)
 end
 
 def fizzbuzz(number)
-  return 'FizzBuzz' if divisible_by_15(number)
-  return 'Fizz' if divisible_by_3(number)
-  return 'Buzz' if divisible_by_5(number)
-  number
+  return 'fizzbuzz' if divisible_by_15(number)
+  return 'fizz' if divisible_by_3(number)
+  return 'buzz' if divisible_by_5(number)
+  number 
 end
