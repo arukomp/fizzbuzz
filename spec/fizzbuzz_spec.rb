@@ -23,13 +23,13 @@ describe "FizzBuzz" do
   end
 
   describe "fizzbuzz" do
-    it "returns 'fizz' when divisible by 3" do
+    it "returns 'fizz' when given number 3" do
       expect(fizzbuzz(3)).to eq 'fizz'
     end
-    it "returns 'buzz' when divisible by 5" do
+    it "returns 'buzz' when given number 5" do
       expect(fizzbuzz(5)).to eq 'buzz'
     end
-    it "returns 'fizzbuzz' when divisible by 15" do
+    it "returns 'fizzbuzz'" do
       expect(fizzbuzz(15)).to eq 'fizzbuzz'
     end
     it "returns the number itself otherwise" do
